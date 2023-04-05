@@ -63,3 +63,36 @@ GO
 SELECT * FROM payment
 WHERE payment_type_id LIKE '[1]%';
 GO
+
+SELECT * FROM payment
+WHERE payment_type_id LIKE '[1]%';
+GO
+
+select 
+	payment_id,
+	payment_type_id,
+	total_amount
+
+FROM
+	payment
+
+WHERE
+	total_amount >10
+
+ORDER BY
+	payment_id ASC
+GO
+
+SELECT
+	menu_items,
+	price
+
+FROM
+	menu_items
+
+WHERE	
+	price <= 2.80
+
+ORDER BY
+	menu_items ASC
+GO
