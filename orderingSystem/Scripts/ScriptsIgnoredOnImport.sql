@@ -37,3 +37,29 @@ GO
 
 INSERT INTO [dbo].[menu_items] ([menu_items], [price], [menu_id]) VALUES (N'seadog', CAST(5.00 AS Decimal(4, 2)), 13)
 GO
+
+SELECT first_name, last_name FROM customer_details;
+GO
+
+SELECT total_amount FROM payment WHERE (total_amount >= 1.00 AND total_amount <= 20.00);
+GO
+
+SELECT * FROM customer_details
+WHERE customer_id = 1;
+GO
+
+SELECT * FROM payment_type
+WHERE payment_type='cash';
+GO
+
+SELECT * FROM employee_details
+WHERE first_name LIKE '[c]%';
+GO
+
+SELECT first_name, last_name, email, city FROM customer_details
+WHERE city LIKE '[aw]%';
+GO
+
+SELECT * FROM payment
+WHERE payment_type_id LIKE '[1]%';
+GO
